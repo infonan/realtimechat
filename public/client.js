@@ -12,6 +12,22 @@ const userCountSpan = document.getElementById("user-count");
 const toggleBtn = document.getElementById("toggle-theme");
 
 let username = "";
+// ✅ Auto-login if username already saved in localStorage
+const savedUsername = localStorage.getItem("chat-username");
+if (savedUsername) {
+  username = savedUsername;
+
+  // Show chat screen, hide login
+  loginScreen.classList.add("hidden");
+  chatScreen.classList.remove("hidden");
+
+  // Enable input
+  messageInput.disabled = false;
+  messageForm.querySelector("button").disabled = false;
+
+  // Emit new user to server
+  socket.emit("new user", username);
+}
 
 // Disable message form until login
 messageInput.disabled = true;
