@@ -13,7 +13,7 @@ body {
 }
 
 /* Screens */
-#login-screen, #chat-screen { width: 100%; max-width: 480px; }
+#login-screen, #chat-screen { width: 100%; max-width: 33%; }
 .hidden { display: none; }
 
 /* Login */
