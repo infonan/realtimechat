@@ -118,3 +118,12 @@ function appendSystemMessage(text) {
   item.textContent = text;
   messages.appendChild(item);
 }
+// ✅ Optional: Add logout button
+const logoutBtn = document.createElement("button");
+logoutBtn.textContent = "Logout";
+logoutBtn.style.marginLeft = "10px";
+logoutBtn.onclick = () => {
+  localStorage.removeItem("chat-username");
+  location.reload(); // Refresh the page to go back to login
+};
+document.querySelector("header").appendChild(logoutBtn);
