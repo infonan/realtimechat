@@ -23,6 +23,10 @@ loginForm.addEventListener("submit", (e) => {
   username = usernameInput.value.trim();
   if (!username) return;
 
+// ✅ Save username in localStorage
+localStorage.setItem("chat-username", username);
+  
+
   loginScreen.classList.add("hidden");
   chatScreen.classList.remove("hidden");
 
