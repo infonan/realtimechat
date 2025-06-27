@@ -39,8 +39,8 @@ body {
 #chat-screen {
   display: flex;
   flex-direction: column;
-  height: 90vh;
-  width: 90%;
+  height: 95vh;
+  width: 98%;
 }
 header {
   display: flex;
