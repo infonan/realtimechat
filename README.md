@@ -16,10 +16,15 @@ A real-time chat application built with Node.js, Express, and Socket.io.
 
 /realtime-chat-app
 ├ index.js
+
 ├ package.json
+
 ├ public/
+
 │ ├ index.html
+
 │ ├ client.js
+
 │ └ style.css
 
 ## 🌐 Live Demo
