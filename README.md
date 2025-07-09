@@ -15,6 +15,7 @@ A real-time chat application built with Node.js, Express, and Socket.io.
 ## 📂 Project Structure
 
 /realtime-chat-app
+
 ├ index.js
 
 ├ package.json
